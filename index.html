@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Vendor Shop</title>
+    <title>FruitVendor Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Welcome to Fruit Vendor Shop</h1>
-    <button onclick="showAlert()">Click Me</button>
+<body class="dark-mode">
+    <header>
+        <h1>FruitVendor Shop</h1>
+        <button id="darkModeToggle">🌙</button>
+    </header>
+    
+    <section class="products">
+        <div class="product-card">
+            <img src="apple.jpg" alt="Apple">
+            <h2>Fresh Apples</h2>
+            <p>$2.50 per kg</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="banana.jpg" alt="Banana">
+            <h2>Organic Bananas</h2>
+            <p>$1.80 per dozen</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="orange.jpg" alt="Orange">
+            <h2>Juicy Oranges</h2>
+            <p>$3.00 per kg</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
+

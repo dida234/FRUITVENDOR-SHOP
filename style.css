@@ -1,12 +1,66 @@
-body {
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background-color: #f4f4f4;
 }
-button {
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#darkModeToggle {
+    background: none;
     border: none;
+    color: #ffffff;
+    font-size: 20px;
     cursor: pointer;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button.add-to-cart {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.add-to-cart:hover {
+    background-color: #e68900;
 }
